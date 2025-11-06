@@ -140,6 +140,10 @@
 * Branch: `main`
 * Script Path: `jenkinsfile`
 
+  
+ <p align="center">
+  <img src="https://github.com/nikiimisal/Project-Node.js-App-CI-CD-with-Jenkins-GitHub-Webhook/blob/main/img/Screenshot%202025-11-06%20145139.png?raw=true" width="700" alt="Initialize Repository Screenshot">
+</p>
  <p align="center">
   <img src="https://github.com/nikiimisal/Project-Node.js-App-CI-CD-with-Jenkins-GitHub-Webhook/blob/main/img/Screenshot%202025-11-06%20145323.png?raw=true" width="700" alt="Initialize Repository Screenshot">
 </p>
