@@ -6,7 +6,7 @@
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00c6ff,100:0072ff&height=120&section=header&text=Node.js%20CI/CD%20Pipeline%20with%20Jenkins&fontSize=28&fontColor=ffffff" />
 </p>
----
+
 ## 🧩 Overview
 
 ---
@@ -31,7 +31,7 @@
 * **EC2 (Ubuntu)** – Target deployment environment
 
 ---
-## 🔌Plugins 
+## 🔌Plugins (at minimum)
 
 * Git Plugin → For repo clone/pull mechanism.
 
@@ -50,30 +50,23 @@
 
 * Jenkins server(Ubuntu) reachable by your Git host and target servers
 
-* Jenkins plugins (at minimum):
-
--- Pipeline
--- Git
--- GitHub
--- SSH Agent (for SSH-based deploys)
-
 * Target EC2 server(node) with SSH access
 
 * Node.js application source code hosted on a Git repository (e.g., GitHub).
 
 ## High-level CI/CD Flow
 
-1. Developer pushes code to main (or feature branch).
+1.  Developer pushes code to main (or feature branch).
 
-2. Github webhook triggers Jenkins.
+2.  Github webhook triggers Jenkins.
 
-3. Jenkins pulls code, runs npm ci, runs tests.
+3.  Jenkins pulls code, runs npm ci, runs tests.
 
-4.If tests pass, Jenkins builds the app (if there's a build step).
+4.  If tests pass, Jenkins builds the app (if there's a build step).
 
-5. Jenkins deploys the new version to the target:
+5.  Jenkins deploys the new version to the target:
 
-6. SSH into server, install dependencies, restart process (pm2).
+6.  SSH into server, install dependencies, restart process (pm2).
 
 7. Post-deploy smoke tests and notifications.
 
@@ -83,7 +76,7 @@
 
 ### **Step 1: Launch EC2s**
 
-* Create two EC2 instances in same VPC (Default VPC recommended).
+* Create two EC2 instances in same VPC (Default).
 * Security Group:
 
   * Jenkins Server → Port `8080`
@@ -104,7 +97,7 @@
   https://github.com/nikiimisal/node-js-app-CICD
 * Branch: `main`
 
-#### **Add Webhook**
+#### **Add Webhook** (Optional)
 
 * Payload URL → `http://<JENKINS_PUBLIC_IP>:8080/github-webhook/`
 
@@ -113,8 +106,8 @@
 ### **Step 3: Add SSH Credentials in Jenkins**
 
   >Create New Credentails
-1. Navigate → Manage Jenkins → Credentials → Global
-2. Add → **SSH Username with private key**
+1.  Navigate → Manage Jenkins → Credentials → Global
+2.  Add → **SSH Username with private key**
 
    * ID: `node-app-key`
    * Username: `ubuntu`
@@ -248,7 +241,7 @@ By integrating Jenkins with GitHub Webhooks, this setup achieves **automated, re
 
 ---
 
-**Author:** nikiimisal😜
+**Author:** nikiimisal😜<br>
 **License:** MIT
 
 ---
