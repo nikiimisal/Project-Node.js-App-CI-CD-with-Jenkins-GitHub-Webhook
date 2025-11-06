@@ -4,7 +4,7 @@
 
 ---
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00c6ff,100:0072ff&height=120&section=header&text=Node.js%20CI/CD%20Pipeline%20with%20Jenkins&fontSize=28&fontColor=ffffff" />
+  <img src="https://github.com/nikiimisal/Project-Node.js-App-CI-CD-with-Jenkins-GitHub-Webhook/blob/main/img/oooooooooooooooooooooooooooooooooooo.png?raw=true" width="700" alt="Initialize Repository Screenshot">
 </p>
 
 ## 🧩 Overview
@@ -89,6 +89,12 @@
         sudo apt install nodejs npm -y
         sudo npm install -g pm2
 
+
+  <p align="center">
+  <img src="https://github.com/nikiimisal/Project-Node.js-App-CI-CD-with-Jenkins-GitHub-Webhook/blob/main/img/Screenshot%202025-11-06%20142408.png?raw=true" width="700" alt="Initialize Repository Screenshot">
+</p>
+
+
 ---
 
 ### **Step 2: Create GitHub Repository**
@@ -101,6 +107,13 @@
 
 * Payload URL → `http://<JENKINS_PUBLIC_IP>:8080/github-webhook/`
 
+ <p align="center">
+  <img src="https://github.com/nikiimisal/Project-Node.js-App-CI-CD-with-Jenkins-GitHub-Webhook/blob/main/img/Screenshot%202025-11-06%20142529.png?raw=true" width="700" alt="Initialize Repository Screenshot">
+</p>
+
+ <p align="center">
+  <img src="https://github.com/nikiimisal/Project-Node.js-App-CI-CD-with-Jenkins-GitHub-Webhook/blob/main/img/Screenshot%202025-11-06%20142750.png?raw=true" width="700" alt="Initialize Repository Screenshot">
+</p>
 ---
 
 ### **Step 3: Add SSH Credentials in Jenkins**
@@ -112,7 +125,9 @@
    * ID: `node-app-key`
    * Username: `ubuntu`
    * Paste your private key
-
+ <p align="center">
+  <img src="https://github.com/nikiimisal/Project-Node.js-App-CI-CD-with-Jenkins-GitHub-Webhook/blob/main/img/Screenshot%202025-11-06%20143758.png?raw=true" width="700" alt="Initialize Repository Screenshot">
+</p>
 ---
 
 ### **Step 4: Create Jenkins Pipeline Job**
@@ -125,6 +140,9 @@
 * Branch: `main`
 * Script Path: `jenkinsfile`
 
+ <p align="center">
+  <img src="https://github.com/nikiimisal/Project-Node.js-App-CI-CD-with-Jenkins-GitHub-Webhook/blob/main/img/Screenshot%202025-11-06%20145323.png?raw=true" width="700" alt="Initialize Repository Screenshot">
+</p>
 ---
 
 ### **Step 5: Jenkinsfile Configuration**
@@ -207,6 +225,11 @@ Open jenkin:
 >If the pipeline runs successfully, that’s great 👍 —<br>
 but if it fails, check the Console Output in Jenkins to see the errors and fix them accordingly.
 
+
+ <p align="center">
+  <img src="https://github.com/nikiimisal/Project-Node.js-App-CI-CD-with-Jenkins-GitHub-Webhook/blob/main/img/Screenshot%202025-11-06%20150047.png?raw=true" width="700" alt="Initialize Repository Screenshot">
+</p>
+
 ---
 ### **Step 8: Browse Application on browser**
 
@@ -214,6 +237,9 @@ Open in browser:
 
 open browser and enter `http://<Node-Server-Public-Ip>:3000`
 
+<p align="center">
+  <img src="https://github.com/nikiimisal/Project-Node.js-App-CI-CD-with-Jenkins-GitHub-Webhook/blob/main/img/Screenshot%202025-11-06%20150140.png?raw=true" width="700" alt="Initialize Repository Screenshot">
+</p>
 
 ---
 
