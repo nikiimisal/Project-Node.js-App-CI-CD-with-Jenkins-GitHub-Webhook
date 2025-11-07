@@ -100,7 +100,7 @@
 ### **Step 2: Create GitHub Repository**
 
 * Repo Name: `node-js-app-CICD`
-  https://github.com/nikiimisal/node-js-app-CICD
+  https://github.com/nikiimisal/node-js.app-Python-app-Portfollio-CICD
 * Branch: `main`
 
 #### **Add Webhook** (Optional)
