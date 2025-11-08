@@ -1,6 +1,7 @@
 # 🚀 Node.js App — CI/CD with Jenkins & GitHub 
 
->This project demonstrates a **complete CI/CD pipeline** for a Node.js application using **Jenkins and GitHub Webhooks**, fully automated from **code push → build → test → deploy**.
+>This project demonstrates a **complete CI/CD pipeline** for a Node.js application using **Jenkins and GitHub Webhooks**, fully automated from **code push → build → test → deploy**.<br>
+>This documentation is beginner-friendly as well as professional.
 
 ---
 <p align="center">
